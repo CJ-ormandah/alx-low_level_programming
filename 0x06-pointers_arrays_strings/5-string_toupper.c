@@ -3,7 +3,6 @@
 /**
  * string_toupper - changes all lowercase letters of  a string to uppercase
  * @word: Pointer to string
- *
  * Return: Pointer to uppercase string
  */
 
@@ -19,6 +18,7 @@ char *string_toupper(char *word)
 		{
 			word[length] = word[length] - 32;
 			length++;
-	}
+		}
 	return (word);
+	}
 }
