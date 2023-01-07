@@ -1,24 +1,20 @@
 #include "main.h"
 
 /**
- * string_toupper - changes all lowercase letters of  a string to uppercase
- * @word: Pointer to string
- * Return: Pointer to uppercase string
+ * string_toupper - changes all lowercase letters of  a string to upper case
+ * @s : pointer to input char
+ * Return: @s
  */
 
-char *string_toupper(char *word)
+char *string_toupper(char *s)
 {
-	int length;
+	int i = 0;
 
-	length = 0;
-
-	while (word[length] != '\0')
+	while (s[i] != '\0')
 	{
-		if (word[length] >= 97 && word[length] <= 122)
-		{
-			word[length] = word[length] - 32;
-			length++;
-		}
-	return (word);
+		if (s[i] >= 97 && s[i] <= 122)
+			s[i] = s[i] - 32;
+		i++;
 	}
+	return (s);
 }
